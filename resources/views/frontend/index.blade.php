@@ -87,7 +87,7 @@
                 {!! \App\Models\Master::where('name','homepage2ndsection')->first()->description !!}
                 <a href="{{route('charity.register')}}" class="btn-theme bg-secondary mx-auto fs-6 py-2">Register your charity</a>
                 <a href="{{route('newcampaign_show')}}" class="btn-theme bg-primary mx-auto fs-6 py-2">Start fundraising</a>
-                <a href="{{route('start_new_event')}}" class="btn-theme bg-secondary mx-auto fs-6 py-2">Create new event</a>
+                {{-- <a href="{{route('start_new_event')}}" class="btn-theme bg-secondary mx-auto fs-6 py-2">Create new event</a> --}}
             </div>
 
 
@@ -96,7 +96,7 @@
 </section>
 
 @if (isset($singleevent))
-<section class="show-events">
+<section class="show-events" style="display: none">
     <div class="container-fluid p-0">
         <div class="row "> 
             <div class="event">
@@ -196,7 +196,7 @@
 </section>
 
 <!--Event Section -->
-<section class="bleesed default">
+<section class="bleesed default" style="display: none">
     <div class="container">
         <div class="row">
             <div class="title">
